@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="odor_f <= 0.5\ngini = 0.499\nsamples = 5416\nvalue = [2611, 2805]\nclass = l", fillcolor="#f1f8fd"] ;
+1 [label="odor_n <= 0.5\ngini = 0.363\nsamples = 3683\nvalue = [878, 2805]\nclass = l", fillcolor="#77bced"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="odor_a <= 0.5\ngini = 0.5\nsamples = 1566\nvalue = [766, 800]\nclass = l", fillcolor="#f7fbfe"] ;
+1 -> 2 ;
+3 [label="odor_l <= 0.5\ngini = 0.451\nsamples = 1166\nvalue = [766, 400]\nclass = c", fillcolor="#f3c3a0"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 766\nvalue = [766, 0]\nclass = c", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 400\nvalue = [0, 400]\nclass = l", fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 400\nvalue = [0, 400]\nclass = l", fillcolor="#399de5"] ;
+2 -> 6 ;
+7 [label="gini = 0.1\nsamples = 2117\nvalue = [112, 2005]\nclass = l", fillcolor="#44a2e6"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1733\nvalue = [1733, 0]\nclass = c", fillcolor="#e58139"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
